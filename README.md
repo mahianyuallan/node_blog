@@ -84,106 +84,16 @@ Copy code
    ```bash
    git clone https://github.com/mahianyuallan/node_blog.git
    cd node_blog
-Install dependencies:
+2. Install dependencies:
 
-bash
-Copy code
-npm install
-Run the Express app:
+   ``` bash
+    Copy code
+    npm install
+    Run the Express app:
 
-bash
-Copy code
-node app.js
-The app will start on http://localhost:3000.
+  ```bash
+    Copy code
+    node app.js
+    The app will start on http://localhost:3000.
 
-Run the raw Node.js HTTP server:
 
-bash
-Copy code
-node server.js
-This will also run on http://localhost:3000.
-
-For development with hot-reloading:
-
-bash
-Copy code
-npx nodemon app.js
-📚 Scripts
-You can add these scripts to your package.json:
-
-json
-Copy code
-"scripts": {
-  "start": "node app.js",
-  "server": "node server.js",
-  "dev": "nodemon app.js"
-}
-Then run:
-
-bash
-Copy code
-npm start   # Run Express app
-npm run server  # Run HTTP server
-npm run dev     # Run with nodemon
-📦 Dependencies
-Main dependencies include:
-
-express – Fast web framework for Node.js
-
-lodash – Utility library
-
-nodemon – Auto-reload during development
-
-📡 API Endpoints (Express)
-Method	Endpoint	Description
-GET	/	Returns the homepage (index.html)
-GET	/about	Returns the about page (about.html)
-GET	/about-us	Redirects to /about
-ANY	*	Returns the 404 page (404.html)
-
-🧪 Testing
-Basic functionality can be verified by:
-
-Starting the app:
-
-bash
-Copy code
-npm start
-Visiting in your browser:
-
-http://localhost:3000/ → Home page
-
-http://localhost:3000/about → About page
-
-http://localhost:3000/about-us → Redirect to About
-
-Any other route (e.g., /random) → 404 page
-
-🤝 Contributing
-Contributions are welcome!
-
-To contribute:
-
-Fork the repo
-
-Create a feature branch (git checkout -b feature/my-feature)
-
-Commit changes (git commit -m "Add new feature")
-
-Push to your branch (git push origin feature/my-feature)
-
-Open a Pull Request
-
-📄 License
-This project is licensed under the MIT License – see the LICENSE file for details.
-
-👤 Author
-Allan Mahianyu
-GitHub: @mahianyuallan
-
-📌 Notes
-This project is educational in nature.
-It demonstrates core Node.js concepts and can serve as a starting point for building more advanced applications like full-fledged blogs with databases, authentication, and APIs.
-
-yaml
-Copy code
