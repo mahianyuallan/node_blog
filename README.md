@@ -18,31 +18,30 @@ It is designed both as a learning resource and a lightweight blog skeleton that 
 
 node_blog/
 │
-├── app.js # Express app entry point
-├── server.js # Node.js HTTP server with routing
-├── files.js # File system operations (read, write, delete)
-├── global.js # Demonstrates global objects, timers, and intervals
-├── modules.js # Module imports/exports and OS module usage
-├── people.js # Example module with exported data
-├── streams.js # Demonstrates readable/writable streams
-├── test.js # Small script with a greeting function
+├── app.js           # Express app entry point
+├── server.js        # Node.js HTTP server with routing
+├── files.js         # File system operations (read, write, delete)
+├── global.js        # Demonstrates global objects, timers, and intervals
+├── modules.js       # Module imports/exports and OS module usage
+├── people.js        # Example module with exported data
+├── streams.js       # Demonstrates readable/writable streams
+├── test.js          # Small script with a greeting function
 │
-├── docs/ # Example text files for FS and streams
-│ ├── blog1.txt
-│ ├── blog2.txt
-│ ├── blog3.txt
-│ └── blog4.txt
+├── docs/            # Example text files for FS and streams
+│   ├── blog1.txt
+│   ├── blog2.txt
+│   ├── blog3.txt
+│   └── blog4.txt
 │
-├── views/ # HTML templates served by Express/HTTP
-│ ├── index.html
-│ ├── about.html
-│ └── 404.html
+├── views/           # HTML templates served by Express/HTTP
+│   ├── index.html
+│   ├── about.html
+│   └── 404.html
 │
-├── package.json # Project metadata and dependencies
+├── package.json     # Project metadata and dependencies
 └── package-lock.json # Lockfile for reproducible builds
 
-markdown
-Copy code
+
 
 ---
 
@@ -95,5 +94,6 @@ Copy code
     Copy code
     node app.js
     The app will start on http://localhost:3000.
+
 
 
